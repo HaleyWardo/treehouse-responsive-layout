@@ -3,62 +3,164 @@
     box-sizing: border-box;
 }
 
-/*----- Base Element Styles ------------*/
-
-/*----------- Selector Styles ------------*/
-
-/* ---- Navigation ---- */
-
-/* ---- Layout Containers ---- */
-
-/*------------------Media Queries----------*/
-
 body {
-    background-color: lightgrey;
+    background-color: rgba(240, 236, 236, 0.45);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main {
+    width: 50%;
+    margin: 0 auto;
 }
 
 .main-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 3.3em 2em;
 }
 
+.main-nav .name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.links {
+    padding-top: 10px;
+}
 
 .main-nav .links a {
     text-decoration: none;
+    font-weight: bold;
+    padding-left: 2.3em;
+    text-transform: uppercase;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: #FACD6D;
 }
 
 .header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+.header p {
+    margin: 0;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 1.875em;
+    font-weight: lighter;
+    padding-right: 1em;
+    color: grey;
 }
 
 .row-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .main-content {
     background-color: white;
-    margin: 1.25em;
-    padding: 1.15em;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .main-content h2 {
     text-align: center;
-    margin: 1.7em 0 2.5em 0;
+    font-size: 1.125em;
+    margin-top: 3em;
+    margin-bottom: 0;
+    padding: 3em 0;
+    text-transform: uppercase;
 }
 
 .main-content .card {
     display: flex;
     flex-direction: column;
     text-align: center;
-    max-width: 25em;
+    padding-right: 1.25em;
+}
+
+.main-content .end {
+    padding-right: 0em;
 }
 
 .main-content .card img {
     display: block;
     margin: 0 auto;
-    width: 25em;
+    width: 100%;
 }
+
+.main-content .card p {
+    font-family: 'BenchNine', sans-serif;
+    margin: 0;
+    padding-bottom: 3.125em;
+    font-size: 1.25em;
+    color: rgba(41, 39, 39, 0.86);
+}
+
+.main-content .card div {
+    font-size: 1.125em;
+    margin: 1.125em;
+}
+
+.footer {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.footer .contact {
+    font-size: 1.125em;
+    font-weight: bold;
+    margin-top: 3.4375em;
+    margin-bottom: 2.5em;
+    text-transform: uppercase;
+}
+
+.footer .text a {
+    text-decoration: none;
+}
+
+.text, .text-para {
+    font-size: 1.25em;
+    color: grey;
+}
+
+.footer .text-para {
+    margin-bottom: 2.625em;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:1.875em; 
+    font-weight: bold;
+    border-top: 1px solid lightgrey;
+}
+
+.footer-links a {
+    text-decoration: none;
+    padding-left: 2.3em;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+
+/*------------------Media Queries----------*/
