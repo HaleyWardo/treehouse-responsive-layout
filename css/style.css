@@ -20,18 +20,21 @@ a {
 .main-nav .name {
     font-size: 1.5625em;
     font-weight: bold;
-    padding: 15px 0 20px;
+    margin-bottom: 0;
 }
 
-.main-nav .links a {
+.main-nav ul {
     font-size: 13px;
     font-weight: bold;
-    display: flex;
-    flex-direction: column;
+    display: inline;
     text-transform: uppercase;
-    background-color: white;
+    list-style-type: none;
+}
+
+.main-nav li {
     margin-bottom: 5px;
     padding: 5px;
+    background-color: white;
 }
 
 a:link, a:visited {
@@ -42,13 +45,13 @@ a:hover {
     color: #FACD6D;
 }
 
-.header img {
+.profile img {
     margin: 0 auto;
     width: 100%;
-    padding: 2.5em 2.5em 0;
+    padding: 0 2.5em;
 }
 
-.header p {
+.profile p {
     font-family: 'BenchNine', sans-serif;
     font-size: 1.1875em;
     font-weight: lighter;
@@ -99,6 +102,9 @@ a:hover {
 .footer-nav {
     border-top: 1px solid lightgrey;
     padding: 1.5625em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .footer-nav h3 {
@@ -116,6 +122,7 @@ a:hover {
     text-transform: uppercase;
     font-size: smaller;
     font-weight: bold;
+    margin-top: 1.1875em;
 }
 
 
@@ -123,27 +130,32 @@ a:hover {
 
 @media (min-width: 768px) {
     .main-nav .name {
-        padding: 40px 0 20px;
-    }
-    
-    .main-nav .links a {
-        display: inline;
-        background-color: inherit;
-        padding-left: 2.3em;
+        margin: 30px 0 10px;
     }
 
-    .header {
+    .main-nav ul {
+        display: inline-flex;
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .main-nav li {
+        background-color: inherit;
+        padding-left: 20px;
+    }
+
+    .profile {
         display: flex;
         flex-direction: row-reverse; 
         margin: 3.125em 1.5625em;      
     }
 
-    .header img {
+    .profile img {
         width: 50%;
         padding: 0;
     }
 
-    .header p {
+    .profile p {
         font-size: 1.375em;
         margin: 0;
         padding-right: 1em;
@@ -159,22 +171,31 @@ a:hover {
     }
 
     .main-content .card p {
-        padding: 0 25px;
+        padding: 0 1.5625em;
     }
 
     .text-para {
-        margin: 35px 100px;
+        margin: 2.1875em 6.25em;
     }
 
     .footer-nav {
         padding: 1em 0 3em;
         display: flex;
         flex-direction: row;
+        justify-content: space-between
     }
 
     .footer-ul {
-        display: inline;
+        display: block;
         list-style-type: none;
+    }
+
+    .footer-ul li {
+        display: inline;
+        padding-left: 1.25em;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 13px;
     }
 
     .top {
