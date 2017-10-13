@@ -206,5 +206,40 @@ a:hover {
 
 
 @media (min-width: 1024px) {
-    
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em 1.25em 0 1.25em;
+    }
+
+    .main-nav .name {
+        margin: 0;
+    }
+
+    .main-nav .main-ul {
+        margin: 0;
+    }
+
+    .profile {
+        margin: 3.125em 1.25em;
+    }
+
+    .profile p {
+        font-size: 1.7em;
+        text-align: left;
+    }
+   
+   .row-container .card {
+        width: 33%;
+    }
+
+    .text-para {
+        margin: 2.1875em 13em;
+    }
+
+    .footer-nav {
+        padding: 1em;
+    }
 }
