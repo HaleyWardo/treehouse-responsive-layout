@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -9,31 +8,27 @@ body {
 }
 
 .main {
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
-}
-
-.main-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 3.3em 2em;
+    text-align: center;
 }
 
 .main-nav .name {
-    font-size: 25px;
+    font-size: 1.5625em;
     font-weight: bold;
-}
-
-.links {
-    padding-top: 10px;
+    padding: 5px 0 20px;
 }
 
 .main-nav .links a {
-    text-decoration: none;
+    font-size: 13px;
     font-weight: bold;
-    padding-left: 2.3em;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
     text-transform: uppercase;
+    background-color: white;
+    margin-bottom: 5px;
+    padding: 5px;
 }
 
 a:link {
@@ -48,88 +43,58 @@ a:hover {
     color: #FACD6D;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 2em;
+.header img {
+    margin: 0 auto;
+    width: 100%;
+    padding: 2.5em 2.5em 0;
 }
 
 .header p {
-    margin: 0;
     font-family: 'BenchNine', sans-serif;
-    font-size: 1.875em;
+    font-size: 1.1875em;
     font-weight: lighter;
-    padding-right: 1em;
     color: grey;
 }
 
-.row-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 2em;
-    margin-right: 2em;
-}
 
 .main-content {
     background-color: white;
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 1.5625em;
 }
 
 .main-content h2 {
-    text-align: center;
-    font-size: 1.125em;
-    margin-top: 3em;
+    font-size: .94em;
+    margin-top: 2em;
     margin-bottom: 0;
-    padding: 3em 0;
+    padding: 2.5em 0 1.1em;
     text-transform: uppercase;
 }
 
-.main-content .card {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-right: 1.25em;
-}
-
-.main-content .end {
-    padding-right: 0em;
-}
-
 .main-content .card img {
-    display: block;
     margin: 0 auto;
     width: 100%;
+    padding: 20px;
+
 }
 
 .main-content .card p {
     font-family: 'BenchNine', sans-serif;
-    margin: 0;
-    padding-bottom: 3.125em;
-    font-size: 1.25em;
     color: rgba(41, 39, 39, 0.86);
-}
-
-.main-content .card div {
     font-size: 1.125em;
-    margin: 1.125em;
+    padding: 0 16px;
 }
 
 .footer {
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 3.4375em;;
 }
 
 .footer .contact {
-    font-size: 1.125em;
+    font-size: .94em;
     font-weight: bold;
-    margin-top: 3.4375em;
-    margin-bottom: 2.5em;
     text-transform: uppercase;
+    padding: 3.4375em 0 1.25em;
 }
 
 .footer .text a {
@@ -137,30 +102,37 @@ a:hover {
 }
 
 .text, .text-para {
-    font-size: 1.25em;
     color: grey;
 }
 
-.footer .text-para {
-    margin-bottom: 2.625em;
-}
-
 .footer-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding:1.875em; 
-    font-weight: bold;
     border-top: 1px solid lightgrey;
+    padding: 1.5625em 0;
 }
 
-.footer-links a {
+.contact-info {
+    margin: 3.125em 0;  
+}
+
+.contact-info .contact {
+    font-weight: bold;
+}
+
+.footer-nav h3 {
+    display: inline;
+    font-size: 1em;
+    padding-right: 6.7em;
+}
+
+.footer-ul {
+    display: none;
+}
+
+.top {
     text-decoration: none;
-    padding-left: 2.3em;
+    list-style-type: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: smaller;
+    font-weight: bold;
 }
 
-
-
-/*------------------Media Queries----------*/
