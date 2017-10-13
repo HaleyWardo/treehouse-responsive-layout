@@ -86,16 +86,51 @@ a:hover {
     padding: 0 16px;
 }
 
-.contact-info {
-    margin: 3.125em 0;  
+.skills p {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 1.1875em;
+    margin-bottom: 0px;
 }
+
+.skills .skills-info {
+    border-top: 1px solid lightgrey;
+    margin-top: 2.5em;
+    padding-top: 2.5em;
+}
+
+.skills ul {
+    font-size: 13px;
+    font-weight: bold;
+    display: inline;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.skills li {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #fed36e;
+    border-radius: 5px;
+}
+
+.contact-info {
+    margin: 1.4375em 0 3.125em;
+}
+
 .contact-info .contact {
+    border-top: 1px solid lightgrey;
+    padding-top: 2.3125em;
+}
+.contact-info .contact,
+.skills .skills-info {
     font-size: .94em;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.text, .text-para {
+.text, .text-para, .skills p {
     color: grey;
 }
 
