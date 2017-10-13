@@ -13,10 +13,14 @@ body {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 .main-nav .name {
     font-size: 1.5625em;
     font-weight: bold;
-    padding: 5px 0 20px;
+    padding: 15px 0 20px;
 }
 
 .main-nav .links a {
@@ -24,18 +28,13 @@ body {
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    text-decoration: none;
     text-transform: uppercase;
     background-color: white;
     margin-bottom: 5px;
     padding: 5px;
 }
 
-a:link {
-    color: black;
-}
-
-a:visited {
+a:link, a:visited {
     color: black;
 }
 
@@ -56,7 +55,6 @@ a:hover {
     color: grey;
 }
 
-
 .main-content {
     background-color: white;
     width: 100%;
@@ -76,7 +74,6 @@ a:hover {
     margin: 0 auto;
     width: 100%;
     padding: 20px;
-
 }
 
 .main-content .card p {
@@ -86,19 +83,13 @@ a:hover {
     padding: 0 16px;
 }
 
-.footer {
-    margin-bottom: 3.4375em;;
+.contact-info {
+    margin: 3.125em 0;  
 }
-
-.footer .contact {
+.contact-info .contact {
     font-size: .94em;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 3.4375em 0 1.25em;
-}
-
-.footer .text a {
-    text-decoration: none;
 }
 
 .text, .text-para {
@@ -108,14 +99,6 @@ a:hover {
 .footer-nav {
     border-top: 1px solid lightgrey;
     padding: 1.5625em 0;
-}
-
-.contact-info {
-    margin: 3.125em 0;  
-}
-
-.contact-info .contact {
-    font-weight: bold;
 }
 
 .footer-nav h3 {
@@ -129,10 +112,78 @@ a:hover {
 }
 
 .top {
-    text-decoration: none;
     list-style-type: none;
     text-transform: uppercase;
     font-size: smaller;
     font-weight: bold;
 }
 
+
+/*------------------Media Queries----------*/
+
+@media (min-width: 768px) {
+    .main-nav .name {
+        padding: 40px 0 20px;
+    }
+    
+    .main-nav .links a {
+        display: inline;
+        background-color: inherit;
+        padding-left: 2.3em;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row-reverse; 
+        margin: 3.125em 1.5625em;      
+    }
+
+    .header img {
+        width: 50%;
+        padding: 0;
+    }
+
+    .header p {
+        font-size: 1.375em;
+        margin: 0;
+        padding-right: 1em;
+    }
+
+    .main-content .card {
+        width: 50%;
+    }
+
+    .main-content .row-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-content .card p {
+        padding: 0 25px;
+    }
+
+    .text-para {
+        margin: 35px 100px;
+    }
+
+    .footer-nav {
+        padding: 1em 0 3em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-ul {
+        display: inline;
+        list-style-type: none;
+    }
+
+    .top {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    
+}
