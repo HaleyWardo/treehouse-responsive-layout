@@ -17,6 +17,17 @@ a {
     text-decoration: none;
 }
 
+.main-nav a {
+    display: block;
+}
+a:link, a:visited {
+    color: black;
+}
+
+a:hover {
+    color: #FACD6D;
+}
+
 .main-nav .name {
     font-size: 1.5625em;
     font-weight: bold;
@@ -35,14 +46,6 @@ a {
     margin-bottom: 5px;
     padding: 5px;
     background-color: white;
-}
-
-a:link, a:visited {
-    color: black;
-}
-
-a:hover {
-    color: #FACD6D;
 }
 
 .profile img {
@@ -123,6 +126,7 @@ a:hover {
     border-top: 1px solid lightgrey;
     padding-top: 2.3125em;
 }
+
 .contact-info .contact,
 .skills .skills-info {
     font-size: .94em;
@@ -209,6 +213,10 @@ a:hover {
         padding: 0 1.5625em;
     }
 
+    .skills p {
+        margin: 1.1875em 5em;
+    }
+
     .text-para {
         margin: 2.1875em 6.25em;
     }
@@ -242,6 +250,11 @@ a:hover {
 
 @media (min-width: 1024px) {
 
+    body {
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+
     .main-nav {
         display: flex;
         flex-direction: row;
@@ -269,6 +282,10 @@ a:hover {
    .row-container .card {
         width: 33%;
     }
+    
+    .skills p {
+        margin: 1.1875em 10em;
+    }
 
     .text-para {
         margin: 2.1875em 13em;
@@ -278,3 +295,4 @@ a:hover {
         padding: 1em;
     }
 }
+
