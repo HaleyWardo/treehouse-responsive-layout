@@ -1,7 +1,9 @@
 # Treehouse Responsive Layout
 Using HTML, CSS, and responsive design, I created a mobile-first web page with a layout that adjusts to fit mobile phones, tablets, and desktop displays.
 
-![](https://github.com/HaleyWardo/treehouse-responsive-layout/blob/master/image.png)
+<p align="center">
+  <img src="https://github.com/HaleyWardo/treehouse-responsive-layout/blob/master/image.png">
+</p>
 
 ## Overview 
 For this project, I built a responsive page by using a mobile-first approach. I started off with a mobile version and then added breakpoints using media queries for the larger screen sizes. The layout accommodates small, medium, and large screen sizes. For this project, I was tasked with building all the HTML and CSS myself by using the provided mockups as a guide. 
